@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Pasture + Market Menus — Breakfast, Lunch, Dinner, Cocktails & Drinks."/>
+  <title>Menus — Pasture + Market</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/styles.css"/>
+  <style>
+    body { padding-top: 76px; }
+    .menu-page-wrap { background: var(--charcoal); }
+  </style>
+</head>
+<body>
+
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <a href="../index.html" class="nav-logo" aria-label="Pasture + Market home">
+    <!-- REPLACE: <img src="../images/logo.png" alt="Pasture + Market" class="logo-img"/> -->
+    <div class="logo-text-wrap">
+      <span class="name">Pasture + Market</span>
+      <span class="sub">Lac La Biche Golf &amp; Country Club</span>
+    </div>
+  </a>
+  <ul class="nav-links" role="list">
+    <li><a href="../index.html#about">About</a></li>
+    <li class="dropdown-parent">
+      <button aria-haspopup="true" aria-expanded="false">Menu <span class="darrow" aria-hidden="true"></span></button>
+      <ul class="dropdown" role="list">
+        <li><a href="#breakfast-lunch">Breakfast &amp; Lunch</a></li>
+        <li><a href="#dinner">Dinner</a></li>
+        <li><a href="#cocktails">Cocktails &amp; Drinks</a></li>
+      </ul>
+    </li>
+    <li><a href="catering.html">Catering</a></li>
+    <li><a href="reservations.html">Reservations</a></li>
+    <li><a href="../index.html#gallery">Gallery</a></li>
+    <li><a href="../index.html#testimonials">Testimonials</a></li>
+    <li><a href="employment.html">Employment</a></li>
+    <li><a href="../index.html#contact">Contact</a></li>
+  </ul>
+  <div class="nav-actions">
+    <!-- PASTE ORDER ONLINE LINK HERE -->
+    <a href="YOUR_ORDER_ONLINE_LINK_HERE" class="btn-order-nav" target="_blank" rel="noopener">Order Online</a>
+  </div>
+  <button class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+</nav>
+
+<nav class="mobile-nav">
+  <a href="../index.html#about">About</a>
+  <a href="#breakfast-lunch" class="mobile-sub">Breakfast &amp; Lunch</a>
+  <a href="#dinner" class="mobile-sub">Dinner</a>
+  <a href="#cocktails" class="mobile-sub">Cocktails &amp; Drinks</a>
+  <a href="catering.html">Catering</a>
+  <a href="reservations.html">Reservations</a>
+  <a href="../index.html#gallery">Gallery</a>
+  <a href="../index.html#testimonials">Testimonials</a>
+  <a href="employment.html">Employment</a>
+  <a href="../index.html#contact">Contact</a>
+  <a href="YOUR_ORDER_ONLINE_LINK_HERE" class="btn-order-mobile" target="_blank" rel="noopener">Order Online</a>
+</nav>
+
+<!-- Page Hero -->
+<div class="page-hero">
+  <div class="page-hero-bg"></div><!-- REPLACE: background-image:url('../images/menu-hero.jpg') in style attr -->
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <p class="section-label">Explore Our Offerings</p>
+    <h1><em>The Menus</em></h1>
+    <div class="page-hero-rule"></div>
+  </div>
+</div>
+
+<div class="menu-page-wrap">
+  <div class="menu-inner">
+    <p style="text-align:center;font-size:0.8rem;font-weight:300;color:var(--text-dim);letter-spacing:0.06em;margin-bottom:3rem;">
+      Prices and items vary seasonally. Ask your server about today's features.
+    </p>
+
+    <div class="menu-tabs" role="tablist">
+      <button class="menu-tab active" role="tab" data-tab="breakfast-lunch" id="breakfast-lunch">Breakfast &amp; Lunch</button>
+      <button class="menu-tab" role="tab" data-tab="dinner" id="dinner">Dinner</button>
+      <button class="menu-tab" role="tab" data-tab="cocktails" id="cocktails">Cocktails &amp; Drinks</button>
+    </div>
+
+    <!-- ── BREAKFAST & LUNCH ── -->
+    <div class="menu-panel active" id="tab-breakfast-lunch" role="tabpanel">
+      <div class="menu-category reveal">
+        <h3 class="menu-category-title">Starters &amp; Small Plates</h3>
+        <div class="menu-items">
+          <!-- REPLACE: Edit item names, descriptions, and prices below -->
+          <div class="menu-item"><div class="menu-item-info"><h5>Smoked Salmon Toast</h5><p>House-cured salmon, whipped crème fraîche, pickled shallots, dill oil</p></div><span class="menu-item-price">$18</span></div>
+          <div class="menu-item"><div class="menu-item-info"><h5>Charcuterie du Pasture</h5><p>Local cured meats, artisan cheeses, house preserves, grilled sourdough</p></div><span class="menu-item-price">$26</span></div>
+          <div class="menu-item"><div class="menu-item-info"><h5>Seasonal Soup</h5><p>Ask your server for today's market preparation</p></div><span class="menu-item-price">$14</span></div>
+          <div class="menu-item"><div class="menu-item-info"><h5>Heirloom Tomato Salad</h5><p>Burrata, aged balsamic, basil oil, maldon salt, fresh herbs</p></div><span class="menu-item-price">$21</span></div>
+        </div>
+      </div>
+      <div class="menu-category reveal">
+        <h3 class="menu-category-title">Morning Signatures</h3>
+        <div class="menu-items">
+          <div class="menu-item"><div class="menu-item-info"><h5>Pasture Benedict</h5><p>Heritage-breed poached eggs, house-smoked back bacon, golden hollandaise, brioche</p></div><span class="menu-item-price">$24</span></div>
+          <div class="menu-item"><div class="menu-item-info"><h5>Farmhouse Skillet</h5><p>Free-range eggs, fingerling potatoes, caramelized peppers, aged cheddar, herb salsa verde</p></div><span class="menu-item-price">$22</span></div>
+          <div class="menu-item"><div class="menu-item-info"><h5>Buttermilk Waffle Stack</h5><p>Seasonal berry compote, whipped honey butter, Alberta maple syrup</p></div><span class="menu-item-price">$19</span></div>
+          <div class="menu-item"><div class="menu-item-info"><h5>Avocado &amp; Egg Toast</h5><p>Smashed avocado, soft-boiled eggs, everything seasoning, micro greens, lemon</p></div><span class="menu-item-price">$17</span></div>
+        </div>
+      </div>
+      <div class="menu-category reveal">
+        <h3 class="menu-category-title">Lunch Mains</h3>
+        <div class="menu-items">
+          <div class="menu-item"><div class="menu-item-info"><h5>P+M Signature Burger</h5><p>Dry-aged beef patty, aged white cheddar, house pickles, truffle aioli, brioche bun</p></div><span class="menu-item-price">$27</span></div>
+          <div class="menu-item"><div class="menu-item-info"><h5>Market Fish Sandwich</h5><p>Fresh-catch of the day, tartar, shredded cabbage slaw, toasted ciabatta</p></div><span class="menu-item-price">$25</span></div>
+          <div class="menu-item"><div class="menu-item-info"><h5>Golf Club Clubhouse</h5><p>Triple-decker smoked turkey, crisp bacon, brie, avocado, house mayo</p></div><span class="menu-item-price">$23</span></div>
+          <div class="menu-item"><div class="menu-item-info"><h5>Harvest Grain Bowl</h5><p>Farro, roasted beets, goat cheese, spiced pepitas, warm grain mustard vinaigrette</p></div><span class="menu-item-price">$21</span></div>
+        </div>
+      </div>
+      <div class="menu-pdf-note reveal">
+        <p>Full menu available upon request. Items may be updated seasonally.</p>
+        <!-- REPLACE: Uncomment and add your PDF link -->
+        <!-- <a href="../menus/breakfast-lunch.pdf" class="btn-outline" target="_blank">Download Full Menu (PDF)</a> -->
+      </div>
+    </div>
+
+    <!-- ── DINNER ── -->
+    <div class="menu-panel" id="tab-dinner" role="tabpanel">
+      <div class="menu-category reveal">
+        <h3 class="menu-category-title">Amuse &amp; Starters</h3>
+        <div class="menu-items">
+          <div class="menu-item"><div class="menu-item-info"><h5>Tuna Tartare</h5><p>Sesame-ginger dressing, avocado cream, wonton crisp, citrus oil</p></div><span class="menu-item-price">$24</span></div>
+          <div class="menu-item"><div class="menu-item-info"><h5>Duck Confit Croquette</h5><p>Slow-braised duck, truffle béchamel, grain mustard, microgreens</p></div><span class="menu-item-price">$22</span></div>
+          <div class="menu-item"><div class="menu-item-info"><h5>Charred Octopus</h5><p>Smoked paprika, roasted red pepper, chorizo crumble, lemon aioli</p></div><span class="menu-item-price">$28</span></div>
+          <div class="menu-item"><div class="menu-item-info"><h5>French Onion Gratinée</h5><p>Slow-caramelized consommé, gruyère croûton, aged emmental</p></div><span class="menu-item-price">$18</span></div>
+        </div>
+      </div>
+      <div class="menu-category reveal">
+        <h3 class="menu-category-title">Dinner Mains</h3>
+        <div class="menu-items">
+          <div class="menu-item"><div class="menu-item-info"><h5>Alberta Ribeye</h5><p>12oz prime-grade, bone marrow butter, roasted garlic jus, crispy shallots</p></div><span class="menu-item-price">$62</span></div>
+          <div class="menu-item"><div class="menu-item-info"><h5>Pan-Seared Halibut</h5><p>Cauliflower purée, saffron beurre blanc, crispy capers, herb oil</p></div><span class="menu-item-price">$48</span></div>
+          <div class="menu-item"><div class="menu-item-info"><h5>Braised Short Rib</h5><p>72-hour red wine braise, celery root purée, gremolata, jus reduction</p></div><span class="menu-item-price">$52</span></div>
+          <div class="menu-item"><div class="menu-item-info"><h5>Harvest Risotto</h5><p>Seasonal vegetables, truffle oil, parmesan crisp, aged balsamic (V)</p></div><span class="menu-item-price">$36</span></div>
+        </div>
+      </div>
+      <div class="menu-category reveal">
+        <h3 class="menu-category-title">Desserts</h3>
+        <div class="menu-items">
+          <div class="menu-item"><div class="menu-item-info"><h5>Chocolate Fondant</h5><p>Warm Valrhona chocolate, salted caramel centre, vanilla bean ice cream</p></div><span class="menu-item-price">$16</span></div>
+          <div class="menu-item"><div class="menu-item-info"><h5>Crème Brûlée</h5><p>Classic Madagascar vanilla, seasonal fruit compote, almond tuile</p></div><span class="menu-item-price">$14</span></div>
+        </div>
+      </div>
+      <div class="menu-pdf-note reveal"><p>Full dinner menu at your table. Our chef creates weekly feature dishes.</p></div>
+    </div>
+
+    <!-- ── COCKTAILS ── -->
+    <div class="menu-panel" id="tab-cocktails" role="tabpanel">
+      <div class="menu-category reveal">
+        <h3 class="menu-category-title">Signature Cocktails</h3>
+        <div class="menu-items">
+          <div class="menu-item"><div class="menu-item-info"><h5>The Fairway Sour</h5><p>Rye whisky, lemon, honey syrup, egg white, aromatic bitters</p></div><span class="menu-item-price">$17</span></div>
+          <div class="menu-item"><div class="menu-item-info"><h5>Golden Dusk</h5><p>Tequila reposado, elderflower, grapefruit, rosemary smoke, salted rim</p></div><span class="menu-item-price">$19</span></div>
+          <div class="menu-item"><div class="menu-item-info"><h5>Pasture Old Fashioned</h5><p>Bourbon, smoked maple syrup, mole bitters, orange peel, house cherry</p></div><span class="menu-item-price">$20</span></div>
+          <div class="menu-item"><div class="menu-item-info"><h5>The 19th Hole</h5><p>Gin, cucumber, lime, ginger beer, fresh mint, bitter float</p></div><span class="menu-item-price">$16</span></div>
+        </div>
+      </div>
+      <div class="menu-category reveal">
+        <h3 class="menu-category-title">Wine &amp; Bubbles</h3>
+        <div class="menu-items">
+          <div class="menu-item"><div class="menu-item-info"><h5>White Wine Selection</h5><p>Ask your server for our current by-the-glass selections</p></div><span class="menu-item-price">From $13</span></div>
+          <div class="menu-item"><div class="menu-item-info"><h5>Red Wine Program</h5><p>Old and new world regions, thoughtfully sourced</p></div><span class="menu-item-price">From $15</span></div>
+          <div class="menu-item"><div class="menu-item-info"><h5>Champagne &amp; Sparkling</h5><p>Champagne, Cava, and Prosecco by glass or bottle</p></div><span class="menu-item-price">From $16</span></div>
+          <div class="menu-item"><div class="menu-item-info"><h5>Non-Alcoholic Pairings</h5><p>House botanicals, sparkling infusions, premium soft selections</p></div><span class="menu-item-price">From $8</span></div>
+        </div>
+      </div>
+      <div class="menu-pdf-note reveal"><p>Full cocktail &amp; wine list available at the bar. Our team is happy to recommend pairings.</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo-wrap">
+          <!-- REPLACE: <img src="../images/logo.png" alt="Pasture + Market" class="footer-logo-img"/> -->
+          <div class="footer-text-logo"><span class="name">Pasture + Market</span><span class="sub">Lac La Biche G&amp;CC</span></div>
+        </div>
+        <p class="footer-tagline">Elevated farm-to-table dining amid the fairways of Alberta's north country.</p>
+        <div class="footer-social">
+          <a href="YOUR_INSTAGRAM" class="social-link" aria-label="Instagram" target="_blank" rel="noopener">ig</a>
+          <a href="YOUR_FACEBOOK" class="social-link" aria-label="Facebook" target="_blank" rel="noopener">fb</a>
+          <a href="YOUR_TIKTOK" class="social-link" aria-label="TikTok" target="_blank" rel="noopener">tk</a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Navigate</h4><ul>
+        <li><a href="../index.html#about">About</a></li><li><a href="menu.html">Our Menus</a></li>
+        <li><a href="catering.html">Catering</a></li><li><a href="reservations.html">Reservations</a></li>
+        <li><a href="../index.html#gallery">Gallery</a></li><li><a href="employment.html">Employment</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Menus</h4><ul>
+        <li><a href="#breakfast-lunch">Breakfast &amp; Lunch</a></li>
+        <li><a href="#dinner">Dinner</a></li>
+        <li><a href="#cocktails">Cocktails &amp; Drinks</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Hours</h4>
+        <div class="hours-row"><span class="day">Mon – Tue</span><span>Closed</span></div>
+        <div class="hours-row"><span class="day">Wed – Thu</span><span>11am – 9pm</span></div>
+        <div class="hours-row"><span class="day">Fri</span><span>11am – 9:30pm</span></div>
+        <div class="hours-row"><span class="day">Sat</span><span>10am – 9:30pm</span></div>
+        <div class="hours-row"><span class="day">Sunday</span><span>10am – 8pm</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Pasture + Market at Lac La Biche Golf &amp; Country Club. All rights reserved.</p>
+      <div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
+<script src="../js/main.js"></script>
+<script>
+  // Jump to the correct tab if URL has a hash
+  const hash = window.location.hash.replace('#','');
+  if(hash){
+    const tab = document.querySelector('[data-tab="'+hash+'"]');
+    if(tab) tab.click();
+  }
+</script>
+</body>
+</html>
