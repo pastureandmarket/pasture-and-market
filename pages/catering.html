@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Catering & Events — Pasture + Market. Fresh, made-from-scratch catering for golf tournaments, weddings, corporate events and more."/>
+  <title>Catering — Pasture + Market</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/styles.css"/>
+  <style>body{padding-top:72px;background:var(--off-white)}</style>
+</head>
+<body>
+
+<nav id="navbar" role="navigation">
+  <a href="../index.html" class="nav-logo">
+    <!-- REPLACE: <img src="../images/logo.png" alt="Pasture + Market" class="logo-img"/> -->
+    <div class="logo-leaf"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><path d="M12 2C6 2 2 8 2 14c0 4 3 7 7 8 0-4 1-8 3-10 2 2 3 6 3 10 4-1 7-4 7-8 0-6-4-12-10-12z"/></svg></div>
+    <div class="logo-text-wrap"><span class="name">Pasture + Market</span><span class="sub">Lac La Biche Golf &amp; Country Club</span></div>
+  </a>
+  <ul class="nav-links" role="list">
+    <li><a href="../index.html#about">About</a></li>
+    <li class="dropdown-parent">
+      <button aria-haspopup="true" aria-expanded="false">Menu <span class="darrow"></span></button>
+      <ul class="dropdown">
+        <li><a href="menu.html#breakfast-lunch">Breakfast &amp; Lunch</a></li>
+        <li><a href="menu.html#dinner">Dinner</a></li>
+        <li><a href="menu.html#cocktails">Cocktails &amp; Drinks</a></li>
+      </ul>
+    </li>
+    <li><a href="catering.html" class="active-page">Catering</a></li>
+    <li><a href="reservations.html">Reservations</a></li>
+    <li><a href="../index.html#gallery">Gallery</a></li>
+    <li><a href="../index.html#testimonials">Testimonials</a></li>
+    <li><a href="employment.html">Employment</a></li>
+    <li><a href="../index.html#contact">Contact</a></li>
+  </ul>
+  <div class="nav-actions"><a href="YOUR_ORDER_ONLINE_LINK_HERE" class="btn-order-nav" target="_blank" rel="noopener">Order Online</a></div>
+  <button class="hamburger"><span></span><span></span><span></span></button>
+</nav>
+<nav class="mobile-nav">
+  <a href="../index.html#about">About</a><a href="menu.html" class="mobile-sub">Menus</a>
+  <a href="catering.html">Catering</a><a href="reservations.html">Reservations</a>
+  <a href="../index.html#gallery">Gallery</a><a href="employment.html">Employment</a>
+  <a href="../index.html#contact">Contact</a>
+  <a href="YOUR_ORDER_ONLINE_LINK_HERE" class="btn-order-mobile" target="_blank" rel="noopener">Order Online</a>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-bg"></div><!-- REPLACE: style="background-image:url('../images/catering-hero.jpg')" -->
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <p class="section-label">Private Events &amp; Catering</p>
+    <h1>Fresh Food,<br/><em>Your Way</em></h1>
+    <div class="page-hero-rule"></div>
+  </div>
+</div>
+
+<!-- Intro -->
+<section style="padding:6rem 3rem;background:var(--white);">
+  <div style="max-width:900px;margin:0 auto;text-align:center;" class="reveal">
+    <p class="section-label" style="justify-content:center;">What We Offer</p>
+    <h2 class="section-title" style="text-align:center;margin-bottom:1.2rem;">Same Kitchen, Same Care —<br/><em>Brought to Your Event</em></h2>
+    <div class="leaf-divider" style="justify-content:center;"><span>🌿</span></div>
+    <p class="section-body" style="text-align:center;margin:0 auto;">
+      Everything we serve at our catering events is made the same way as our restaurant menu — from scratch, with fresh local ingredients, on the day of your event. We don't do frozen or pre-made. We cook real food, and that's exactly what your guests will taste.
+    </p>
+  </div>
+  <div class="about-pillars" style="max-width:1000px;margin:4rem auto 0;">
+    <div class="pillar reveal">
+      <div class="pillar-icon">⛳</div>
+      <h3>Golf Tournaments</h3>
+      <p>On-course catering, clubhouse banquets, and post-round receptions. We know the course — it's our home.</p>
+    </div>
+    <div class="pillar reveal">
+      <div class="pillar-icon">💐</div>
+      <h3>Weddings &amp; Galas</h3>
+      <p>Milestone celebrations deserve food worth remembering. Fresh menus built around your vision and your guests.</p>
+    </div>
+    <div class="pillar reveal">
+      <div class="pillar-icon">🤝</div>
+      <h3>Corporate Events</h3>
+      <p>Impress your clients with food that's actually good. We handle everything so you can focus on your people.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Form section -->
+<section style="padding:2rem 3rem 6rem;background:var(--foam);">
+  <div class="catering-inner">
+    <div class="catering-intro-grid">
+      <div class="catering-image reveal-left">
+        <!-- REPLACE: <img src="../images/catering.jpg" alt="Fresh catering spread"/> -->
+        <div class="catering-image-frame" aria-hidden="true"></div>
+      </div>
+
+      <div class="reveal-right">
+        <form id="catering-form" class="luxury-form" novalidate>
+          <h3>Plan Your Event 🌿</h3>
+          <p class="form-subtitle">Fill this out and our team will reach out within 24 hours to start building your menu together.</p>
+
+          <div class="form-group"><label for="cat-name">Your Name *</label><input type="text" id="cat-name" name="full-name" placeholder="First and last name" required/></div>
+          <div class="form-row">
+            <div class="form-group"><label for="cat-email">Email *</label><input type="email" id="cat-email" name="email" placeholder="your@email.com" required/></div>
+            <div class="form-group"><label for="cat-phone">Phone *</label><input type="tel" id="cat-phone" name="phone" placeholder="(780) 000-0000" required/></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label for="cat-location">Event Location</label><input type="text" id="cat-location" name="location" placeholder="Venue or address"/></div>
+            <div class="form-group"><label for="cat-date">Event Date</label><input type="date" id="cat-date" name="date"/></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label for="cat-time">Start Time</label><input type="time" id="cat-time" name="start-time"/></div>
+            <div class="form-group"><label for="cat-guests">Guest Count *</label><input type="number" id="cat-guests" name="guests" placeholder="e.g. 75" min="1"/></div>
+          </div>
+
+          <div class="form-group">
+            <p class="form-section-title">Type of Event</p>
+            <div class="check-grid">
+              <label class="check-item"><input type="checkbox" name="event-type" value="Golf Tournament"/><span>Golf Tournament</span></label>
+              <label class="check-item"><input type="checkbox" name="event-type" value="Private Function"/><span>Private Function</span></label>
+              <label class="check-item"><input type="checkbox" name="event-type" value="Corporate Dinner"/><span>Corporate Dinner</span></label>
+              <label class="check-item"><input type="checkbox" name="event-type" value="Fundraiser"/><span>Fundraiser</span></label>
+              <label class="check-item"><input type="checkbox" name="event-type" value="Wedding"/><span>Wedding</span></label>
+              <label class="check-item"><input type="checkbox" name="event-type" value="Party"/><span>Party</span></label>
+              <label class="check-item"><input type="checkbox" name="event-type" value="Other"/><span>Other</span></label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <p class="form-section-title">Dietary Needs</p>
+            <div class="check-grid">
+              <label class="check-item"><input type="checkbox" name="dietary" value="None"/><span>None</span></label>
+              <label class="check-item"><input type="checkbox" name="dietary" value="Vegetarian"/><span>Vegetarian</span></label>
+              <label class="check-item"><input type="checkbox" name="dietary" value="Vegan"/><span>Vegan</span></label>
+              <label class="check-item"><input type="checkbox" name="dietary" value="Kosher"/><span>Kosher</span></label>
+              <label class="check-item"><input type="checkbox" name="dietary" value="Pork-free"/><span>Pork-free</span></label>
+              <label class="check-item"><input type="checkbox" name="dietary" value="Gluten-free"/><span>Gluten-free</span></label>
+              <label class="check-item"><input type="checkbox" name="dietary" value="Dairy-free"/><span>Dairy-free</span></label>
+              <label class="check-item"><input type="checkbox" name="dietary" value="Other"/><span>Other</span></label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <p class="form-section-title">Type of Service</p>
+            <div class="check-grid cols-3">
+              <label class="check-item"><input type="radio" name="service" value="Pickup"/><span>Pickup</span></label>
+              <label class="check-item"><input type="radio" name="service" value="Delivery"/><span>Delivery</span></label>
+              <label class="check-item"><input type="radio" name="service" value="Buffet"/><span>Buffet</span></label>
+              <label class="check-item"><input type="radio" name="service" value="Plated"/><span>Plated</span></label>
+              <label class="check-item"><input type="radio" name="service" value="Other"/><span>Other</span></label>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group"><label for="cat-budget">Budget per Person</label><input type="text" id="cat-budget" name="budget" placeholder="e.g. $50–$80 per person"/></div>
+            <div class="form-group">
+              <label for="cat-contact-pref">Best Way to Reach You</label>
+              <select id="cat-contact-pref" name="contact-pref">
+                <option value="">Select...</option>
+                <option>Email</option><option>Phone Call</option><option>Text Message</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group"><label for="cat-describe">Tell Us About Your Event *</label><textarea id="cat-describe" name="description" placeholder="Tell us your vision — what kind of food, vibe, setup, anything that matters to you..." required></textarea></div>
+          <div class="form-group"><label for="cat-requests">Anything Else?</label><textarea id="cat-requests" name="special-requests" placeholder="Special requests, questions, things we should know..."></textarea></div>
+
+          <div class="form-group">
+            <label for="cat-file">Attach a File (optional)</label>
+            <!-- REPLACE: wire to your upload endpoint -->
+            <input type="file" id="cat-file" name="attachments" class="file-input-wrap" accept=".pdf,.doc,.docx,.jpg,.png"/>
+          </div>
+
+          <button type="submit" class="btn-submit">Send Catering Enquiry 🌿</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo-wrap">
+          <div class="footer-logo-leaf"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><path d="M12 2C6 2 2 8 2 14c0 4 3 7 7 8 0-4 1-8 3-10 2 2 3 6 3 10 4-1 7-4 7-8 0-6-4-12-10-12z"/></svg></div>
+          <div class="footer-text-logo"><span class="name">Pasture + Market</span><span class="sub">Lac La Biche G&amp;CC</span></div>
+        </div>
+        <p class="footer-tagline">Fresh, local, and made with care — every single day.</p>
+        <div class="footer-social">
+          <a href="YOUR_INSTAGRAM" class="social-link" target="_blank" rel="noopener">ig</a>
+          <a href="YOUR_FACEBOOK" class="social-link" target="_blank" rel="noopener">fb</a>
+          <a href="YOUR_TIKTOK" class="social-link" target="_blank" rel="noopener">tk</a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Navigate</h4><ul>
+        <li><a href="../index.html#about">About</a></li><li><a href="menu.html">Menus</a></li>
+        <li><a href="catering.html">Catering</a></li><li><a href="reservations.html">Reservations</a></li>
+        <li><a href="employment.html">Employment</a></li><li><a href="../index.html#contact">Contact</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Menus</h4><ul>
+        <li><a href="menu.html#breakfast-lunch">Breakfast &amp; Lunch</a></li>
+        <li><a href="menu.html#dinner">Dinner</a></li>
+        <li><a href="menu.html#cocktails">Cocktails &amp; Drinks</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Hours</h4>
+        <div class="hours-row"><span class="day">Mon – Tue</span><span>Closed</span></div>
+        <div class="hours-row"><span class="day">Wed – Thu</span><span>11am – 9pm</span></div>
+        <div class="hours-row"><span class="day">Friday</span><span>11am – 9:30pm</span></div>
+        <div class="hours-row"><span class="day">Saturday</span><span>10am – 9:30pm</span></div>
+        <div class="hours-row"><span class="day">Sunday</span><span>10am – 8pm</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Pasture + Market at Lac La Biche Golf &amp; Country Club.</p>
+      <div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div>
+    </div>
+  </div>
+</footer>
+<button id="back-to-top" class="back-to-top">↑</button>
+<script src="../js/main.js"></script>
+</body>
+</html>
