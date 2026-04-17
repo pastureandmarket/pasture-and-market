@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Pasture + Market — Fresh farm-to-table dining at Lac La Biche Golf & Country Club. Everything made fresh, every day."/>
+  <title>Pasture + Market — Farm to Table, Lac La Biche</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <!-- REPLACE: <link rel="icon" href="images/favicon.png"/> -->
+</head>
+<body>
+
+<!-- ============================================================
+     NAV
+     ============================================================ -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <a href="index.html" class="nav-logo" aria-label="Pasture + Market home">
+    <!--
+      LOGO SWAP:
+      Option A (image logo): uncomment below, add your image to images/ folder.
+        <img src="images/logo.png" alt="Pasture + Market" class="logo-img"/>
+
+      Option B (default leaf icon + text): keep as-is.
+    -->
+    <!-- <img src="images/logo.png" alt="Pasture + Market" class="logo-img"/> -->
+    <div class="logo-leaf" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round">
+        <path d="M12 2C6 2 2 8 2 14c0 4 3 7 7 8 0-4 1-8 3-10 2 2 3 6 3 10 4-1 7-4 7-8 0-6-4-12-10-12z"/>
+      </svg>
+    </div>
+    <div class="logo-text-wrap">
+      <span class="name">Pasture + Market</span>
+      <span class="sub">Lac La Biche Golf &amp; Country Club</span>
+    </div>
+  </a>
+
+  <ul class="nav-links" role="list">
+    <li><a href="#about">About</a></li>
+    <li class="dropdown-parent">
+      <button aria-haspopup="true" aria-expanded="false">
+        Menu <span class="darrow" aria-hidden="true"></span>
+      </button>
+      <ul class="dropdown" role="list">
+        <li><a href="pages/menu.html#breakfast-lunch">Breakfast &amp; Lunch</a></li>
+        <li><a href="pages/menu.html#dinner">Dinner</a></li>
+        <li><a href="pages/menu.html#cocktails">Cocktails &amp; Drinks</a></li>
+      </ul>
+    </li>
+    <li><a href="pages/catering.html">Catering</a></li>
+    <li><a href="pages/reservations.html">Reservations</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#testimonials">Testimonials</a></li>
+    <li><a href="pages/employment.html">Employment</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <div class="nav-actions">
+    <!-- PASTE ORDER ONLINE LINK HERE -->
+    <a href="YOUR_ORDER_ONLINE_LINK_HERE" class="btn-order-nav" target="_blank" rel="noopener">Order Online</a>
+  </div>
+  <button class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+</nav>
+
+<nav class="mobile-nav" aria-label="Mobile navigation">
+  <a href="#about">About</a>
+  <a href="pages/menu.html" class="mobile-sub">Breakfast &amp; Lunch</a>
+  <a href="pages/menu.html" class="mobile-sub">Dinner</a>
+  <a href="pages/menu.html" class="mobile-sub">Cocktails &amp; Drinks</a>
+  <a href="pages/catering.html">Catering</a>
+  <a href="pages/reservations.html">Reservations</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#testimonials">Testimonials</a>
+  <a href="pages/employment.html">Employment</a>
+  <a href="#contact">Contact</a>
+  <!-- PASTE ORDER ONLINE LINK HERE -->
+  <a href="YOUR_ORDER_ONLINE_LINK_HERE" class="btn-order-mobile" target="_blank" rel="noopener">Order Online</a>
+</nav>
+
+<!-- ============================================================
+     HERO SLIDESHOW
+     REPLACE: Add style="background-image:url('images/hero-X.jpg')" to each .hero-slide
+     Recommended images: fresh vegetables, plated food, golf course at golden hour, dining room
+     ============================================================ -->
+<section id="hero" aria-label="Welcome">
+  <div class="hero-slides">
+    <div class="hero-slide"></div><!-- REPLACE: style="background-image:url('images/hero-1.jpg')" -->
+    <div class="hero-slide"></div><!-- REPLACE: style="background-image:url('images/hero-2.jpg')" -->
+    <div class="hero-slide"></div><!-- REPLACE: style="background-image:url('images/hero-3.jpg')" -->
+    <div class="hero-slide"></div><!-- REPLACE: style="background-image:url('images/hero-4.jpg')" -->
+  </div>
+  <div class="hero-overlay" aria-hidden="true"></div>
+
+  <!-- Floating bokeh blobs -->
+  <div class="hero-blob hero-blob-1" aria-hidden="true"></div>
+  <div class="hero-blob hero-blob-2" aria-hidden="true"></div>
+  <div class="hero-blob hero-blob-3" aria-hidden="true"></div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">Lac La Biche Golf &amp; Country Club</div>
+    <h1 class="hero-title">
+      Where the Fairway<br/>Meets <em>the Table</em>
+    </h1>
+    <p class="hero-subtitle">
+      Every ingredient, grown fresh. Every dish, made with care.<br/>
+      Farm-to-table dining in the heart of Alberta.
+    </p>
+    <div class="hero-ctas">
+      <!-- PASTE ORDER ONLINE LINK HERE -->
+      <a href="YOUR_ORDER_ONLINE_LINK_HERE" class="btn-primary" target="_blank" rel="noopener">Order Online</a>
+      <!-- PASTE TABLEAGENT RESERVATION LINK HERE -->
+      <a href="YOUR_TABLEAGENT_LINK_HERE" class="btn-outline" target="_blank" rel="noopener">Reserve a Table</a>
+    </div>
+  </div>
+
+  <div class="hero-dots" aria-label="Slideshow navigation">
+    <button class="hero-dot" aria-label="Slide 1"></button>
+    <button class="hero-dot" aria-label="Slide 2"></button>
+    <button class="hero-dot" aria-label="Slide 3"></button>
+    <button class="hero-dot" aria-label="Slide 4"></button>
+  </div>
+
+  <div class="hero-scroll" aria-hidden="true">
+    <span>Discover</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- Scrolling tagline strip -->
+<div class="tagline-strip" aria-hidden="true">
+  <div class="tagline-track">
+    <span class="tagline-item">Farm Fresh Ingredients</span>
+    <span class="tagline-item">Made From Scratch Daily</span>
+    <span class="tagline-item">Locally Sourced</span>
+    <span class="tagline-item">Golf Course Views</span>
+    <span class="tagline-item">Seasonal Menus</span>
+    <span class="tagline-item">Alberta Proud</span>
+    <span class="tagline-item">Private Events &amp; Catering</span>
+    <span class="tagline-item">Pasture + Market</span>
+    <span class="tagline-item">Farm Fresh Ingredients</span>
+    <span class="tagline-item">Made From Scratch Daily</span>
+    <span class="tagline-item">Locally Sourced</span>
+    <span class="tagline-item">Golf Course Views</span>
+    <span class="tagline-item">Seasonal Menus</span>
+    <span class="tagline-item">Alberta Proud</span>
+    <span class="tagline-item">Private Events &amp; Catering</span>
+    <span class="tagline-item">Pasture + Market</span>
+  </div>
+</div>
+
+<!-- ============================================================
+     OUR STORY
+     ============================================================ -->
+<section id="about" aria-label="Our story">
+  <div class="intro-inner">
+    <div class="intro-image-wrap reveal-left">
+      <div class="intro-image">
+        <!-- REPLACE: <img src="images/story.jpg" alt="Fresh vegetables from our farm partners"/> -->
+      </div>
+      <div class="intro-badge" aria-label="Fresh made daily">
+        <span>🌿</span>
+        <small>Fresh<br/>Made<br/>Daily</small>
+      </div>
+    </div>
+
+    <div class="reveal-right">
+      <p class="section-label">Our Story</p>
+      <h2 class="section-title">Rooted in the<br/><em>Land Around Us</em></h2>
+      <div class="leaf-divider"><span>🍃</span></div>
+      <blockquote class="intro-quote">
+        "Real food made with real ingredients — that's not a trend, that's just how we cook."
+      </blockquote>
+      <p class="section-body" style="margin-bottom:1.3rem;">
+        Pasture + Market sits at the edge of the Lac La Biche Golf &amp; Country Club, where the view out the window is as good as what's on the plate. We source everything as close to home as possible — local farms, small producers, and the kind of suppliers who care as much as we do.
+      </p>
+      <p class="section-body">
+        Nothing here is frozen, pre-made, or phoned in. Every morning our kitchen team starts fresh — breaking down whole cuts, washing just-arrived greens, cracking real eggs. We believe that's the only way to do it right.
+      </p>
+
+      <div class="intro-features">
+        <div class="intro-feature">
+          <div class="intro-feature-icon">🥕</div>
+          <h4>Fresh Daily</h4>
+          <p>Prepped from scratch every single morning, no exceptions.</p>
+        </div>
+        <div class="intro-feature">
+          <div class="intro-feature-icon">🌾</div>
+          <h4>Local First</h4>
+          <p>Alberta farms and producers we know personally.</p>
+        </div>
+        <div class="intro-feature">
+          <div class="intro-feature-icon">🌿</div>
+          <h4>Seasonal Menus</h4>
+          <p>What's growing changes what we're cooking.</p>
+        </div>
+        <div class="intro-feature">
+          <div class="intro-feature-icon">⛳</div>
+          <h4>Scenic Setting</h4>
+          <p>Fairway views, open air, and room to breathe.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     MENU PREVIEW
+     ============================================================ -->
+<section id="menu-preview" aria-label="Our menus">
+  <div class="menu-preview-inner">
+    <div class="menu-preview-header reveal">
+      <p class="section-label" style="justify-content:center;">What We're Serving</p>
+      <h2 class="section-title" style="text-align:center;">An Experience<br/><em>for Every Hour</em></h2>
+    </div>
+    <div class="menu-cards">
+      <!-- REPLACE: Add style="background-image:url('images/menu-brunch.jpg')" to each .menu-card-bg -->
+      <a href="pages/menu.html#breakfast-lunch" class="menu-card reveal">
+        <div class="menu-card-bg"></div>
+        <div class="menu-card-overlay"></div>
+        <div class="menu-card-content">
+          <span class="menu-card-label">Morning &amp; Midday</span>
+          <h3 class="menu-card-title">Breakfast<br/>&amp; Lunch</h3>
+          <p class="menu-card-desc">House-made eggs benedict, fresh baked bread, farm salads, and the best burger in Lac La Biche.</p>
+          <span class="menu-card-link">See the Menu</span>
+        </div>
+      </a>
+      <a href="pages/menu.html#dinner" class="menu-card reveal">
+        <div class="menu-card-bg"></div>
+        <div class="menu-card-overlay"></div>
+        <div class="menu-card-content">
+          <span class="menu-card-label">Evening</span>
+          <h3 class="menu-card-title">Dinner</h3>
+          <p class="menu-card-desc">Alberta beef, fresh-catch fish, slow-braised mains, and seasonal plates as the sun sets over the course.</p>
+          <span class="menu-card-link">See the Menu</span>
+        </div>
+      </a>
+      <a href="pages/menu.html#cocktails" class="menu-card reveal">
+        <div class="menu-card-bg"></div>
+        <div class="menu-card-overlay"></div>
+        <div class="menu-card-content">
+          <span class="menu-card-label">Sip &amp; Unwind</span>
+          <h3 class="menu-card-title">Cocktails<br/>&amp; Drinks</h3>
+          <p class="menu-card-desc">Hand-crafted cocktails, curated wines, local craft beers — perfect after 18 holes or just because.</p>
+          <span class="menu-card-link">See the Menu</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Quote banner -->
+<div class="parallax-banner" aria-hidden="true">
+  <div class="parallax-bg"></div><!-- REPLACE: style="background-image:url('images/banner.jpg')" -->
+  <div class="parallax-overlay"></div>
+  <div class="parallax-content">
+    <blockquote>
+      "Good food should feel like it came from someone's garden — because ours does."
+      <cite>— The Pasture + Market Kitchen</cite>
+    </blockquote>
+  </div>
+</div>
+
+<!-- ============================================================
+     GALLERY
+     ============================================================ -->
+<section id="gallery" aria-label="Gallery">
+  <div class="gallery-inner">
+    <div class="gallery-header reveal">
+      <p class="section-label" style="justify-content:center;">A Look Inside</p>
+      <h2 class="section-title light" style="text-align:center;"><em>The Food, The Place,</em><br/>The Feeling</h2>
+    </div>
+    <div class="gallery-filters" role="tablist">
+      <button class="gallery-filter active" data-filter="all">All</button>
+      <button class="gallery-filter" data-filter="food">Food</button>
+      <button class="gallery-filter" data-filter="interior">Interior</button>
+      <button class="gallery-filter" data-filter="events">Events</button>
+      <button class="gallery-filter" data-filter="course">Golf Course</button>
+    </div>
+    <div class="gallery-grid">
+      <!-- REPLACE: Add data-src="images/gallery-X.jpg" and a background image to each .gallery-item-bg -->
+      <div class="gallery-item reveal" data-cat="food" data-src=""><div class="gallery-item-bg"></div><div class="gallery-item-overlay"><span class="gallery-item-icon">+</span></div></div>
+      <div class="gallery-item reveal" data-cat="interior" data-src=""><div class="gallery-item-bg"></div><div class="gallery-item-overlay"><span class="gallery-item-icon">+</span></div></div>
+      <div class="gallery-item reveal" data-cat="course" data-src=""><div class="gallery-item-bg"></div><div class="gallery-item-overlay"><span class="gallery-item-icon">+</span></div></div>
+      <div class="gallery-item reveal" data-cat="food" data-src=""><div class="gallery-item-bg"></div><div class="gallery-item-overlay"><span class="gallery-item-icon">+</span></div></div>
+      <div class="gallery-item reveal" data-cat="events" data-src=""><div class="gallery-item-bg"></div><div class="gallery-item-overlay"><span class="gallery-item-icon">+</span></div></div>
+      <div class="gallery-item reveal" data-cat="interior" data-src=""><div class="gallery-item-bg"></div><div class="gallery-item-overlay"><span class="gallery-item-icon">+</span></div></div>
+      <div class="gallery-item reveal" data-cat="food" data-src=""><div class="gallery-item-bg"></div><div class="gallery-item-overlay"><span class="gallery-item-icon">+</span></div></div>
+      <div class="gallery-item reveal" data-cat="course" data-src=""><div class="gallery-item-bg"></div><div class="gallery-item-overlay"><span class="gallery-item-icon">+</span></div></div>
+    </div>
+  </div>
+</section>
+
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button id="lightbox-close" class="lightbox-close" aria-label="Close">✕</button>
+  <img id="lightbox-img" class="lightbox-img" src="" alt="Gallery image"/>
+</div>
+
+<!-- ============================================================
+     TESTIMONIALS / GUEST VOICES
+     ============================================================ -->
+<section id="testimonials" aria-label="Guest voices">
+  <div class="testimonials-inner">
+    <div class="testimonials-header reveal">
+      <p class="section-label" style="justify-content:center;">Guest Voices</p>
+      <h2 class="section-title" style="text-align:center;">What People Are<br/><em>Saying About Us</em></h2>
+    </div>
+    <div class="testimonials-carousel">
+      <!-- REPLACE with your real reviews -->
+      <article class="testimonial-card reveal">
+        <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
+        <span class="quote-mark" aria-hidden="true">"</span>
+        <p class="testimonial-text">This place is genuinely special. You can taste the difference when everything is made fresh. The Benedict was hands-down the best I've ever had. We'll be back every time we're in Lac La Biche.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" aria-hidden="true">M</div>
+          <div class="author-info"><p class="name">Michelle T.</p><p class="detail">Lac La Biche — Anniversary Brunch</p></div>
+        </div>
+      </article>
+      <article class="testimonial-card reveal">
+        <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
+        <span class="quote-mark" aria-hidden="true">"</span>
+        <p class="testimonial-text">We held our tournament dinner here and it could not have been better. The food was fresh and the team went above and beyond for our group. Everyone was raving about it afterward.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" aria-hidden="true">R</div>
+          <div class="author-info"><p class="name">Robert K.</p><p class="detail">Edmonton — Golf Tournament Dinner</p></div>
+        </div>
+      </article>
+      <article class="testimonial-card reveal">
+        <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
+        <span class="quote-mark" aria-hidden="true">"</span>
+        <p class="testimonial-text">I stop here every time I play the course and it never disappoints. It feels homemade — like someone who actually cares cooked it. That's rare to find and I appreciate it every single time.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" aria-hidden="true">S</div>
+          <div class="author-info"><p class="name">Sarah L.</p><p class="detail">Regular Guest</p></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT
+     ============================================================ -->
+<section id="contact" aria-label="Contact us">
+  <div class="contact-inner">
+    <div class="reveal-left">
+      <p class="section-label">Come Find Us</p>
+      <h2 class="section-title">We'd Love to<br/><em>See You</em></h2>
+      <div class="leaf-divider"><span>🍃</span></div>
+      <p class="section-body">Whether you're coming in after a round, stopping by for lunch, or planning your next big event — the door is always open.</p>
+
+      <div class="contact-details">
+        <div class="contact-detail">
+          <div class="contact-detail-icon" aria-hidden="true">📍</div>
+          <div class="contact-detail-text">
+            <span class="label">Address</span>
+            <!-- REPLACE: Your full address -->
+            <span class="value">Lac La Biche Golf &amp; Country Club<br/>Lac La Biche, Alberta, Canada</span>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon" aria-hidden="true">📞</div>
+          <div class="contact-detail-text">
+            <span class="label">Phone</span>
+            <!-- REPLACE: Your phone number -->
+            <span class="value"><a href="tel:YOUR_PHONE" style="color:inherit;">YOUR PHONE NUMBER</a></span>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon" aria-hidden="true">✉️</div>
+          <div class="contact-detail-text">
+            <span class="label">Email</span>
+            <!-- REPLACE: Your email -->
+            <span class="value"><a href="mailto:info@pasturemarket.ca" style="color:inherit;">info@pasturemarket.ca</a></span>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon" aria-hidden="true">🕐</div>
+          <div class="contact-detail-text">
+            <span class="label">Hours</span>
+            <!-- REPLACE: Your actual hours -->
+            <span class="value">Wed – Fri: 11am – 9:30pm<br/>Sat – Sun: 10am – 9:30pm<br/>Mon – Tue: Closed</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- REPLACE: Paste your Google Maps embed iframe here -->
+      <div class="map-placeholder">
+        <span class="map-icon">🗺️</span>
+        <span>Add your Google Maps embed here</span>
+      </div>
+    </div>
+
+    <div class="reveal-right">
+      <form id="contact-form" class="luxury-form" novalidate>
+        <h3>Say Hello</h3>
+        <p class="form-subtitle">We'll get back to you within one business day.</p>
+        <div class="form-group"><label for="con-name">Your Name *</label><input type="text" id="con-name" name="name" placeholder="First and last name" required/></div>
+        <div class="form-row">
+          <div class="form-group"><label for="con-email">Email *</label><input type="email" id="con-email" name="email" placeholder="your@email.com" required/></div>
+          <div class="form-group"><label for="con-phone">Phone</label><input type="tel" id="con-phone" name="phone" placeholder="(780) 000-0000"/></div>
+        </div>
+        <div class="form-group">
+          <label for="con-subject">What's this about?</label>
+          <select id="con-subject" name="subject">
+            <option value="">Select a topic...</option>
+            <option>Reservations</option>
+            <option>Catering &amp; Events</option>
+            <option>General Question</option>
+            <option>Feedback or Compliment</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group"><label for="con-message">Message *</label><textarea id="con-message" name="message" placeholder="Tell us what's on your mind..." required style="min-height:140px;"></textarea></div>
+        <button type="submit" class="btn-submit">Send Message 🌿</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo-wrap">
+          <!-- REPLACE: <img src="images/logo.png" alt="Pasture + Market" class="footer-logo-img"/> -->
+          <div class="footer-logo-leaf" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round">
+              <path d="M12 2C6 2 2 8 2 14c0 4 3 7 7 8 0-4 1-8 3-10 2 2 3 6 3 10 4-1 7-4 7-8 0-6-4-12-10-12z"/>
+            </svg>
+          </div>
+          <div class="footer-text-logo">
+            <span class="name">Pasture + Market</span>
+            <span class="sub">Lac La Biche G&amp;CC</span>
+          </div>
+        </div>
+        <p class="footer-tagline">Fresh, local, and made with care — every single day.</p>
+        <div class="footer-social" aria-label="Social media">
+          <!-- REPLACE: Your actual social URLs -->
+          <a href="YOUR_INSTAGRAM" class="social-link" aria-label="Instagram" target="_blank" rel="noopener">ig</a>
+          <a href="YOUR_FACEBOOK" class="social-link" aria-label="Facebook" target="_blank" rel="noopener">fb</a>
+          <a href="YOUR_TIKTOK" class="social-link" aria-label="TikTok" target="_blank" rel="noopener">tk</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="pages/menu.html">Our Menus</a></li>
+          <li><a href="pages/catering.html">Catering</a></li>
+          <li><a href="pages/reservations.html">Reservations</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="pages/employment.html">Employment</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Menus</h4>
+        <ul>
+          <li><a href="pages/menu.html#breakfast-lunch">Breakfast &amp; Lunch</a></li>
+          <li><a href="pages/menu.html#dinner">Dinner</a></li>
+          <li><a href="pages/menu.html#cocktails">Cocktails &amp; Drinks</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <!-- REPLACE: Your actual hours -->
+        <div class="hours-row"><span class="day">Mon – Tue</span><span>Closed</span></div>
+        <div class="hours-row"><span class="day">Wed – Thu</span><span>11am – 9pm</span></div>
+        <div class="hours-row"><span class="day">Friday</span><span>11am – 9:30pm</span></div>
+        <div class="hours-row"><span class="day">Saturday</span><span>10am – 9:30pm</span></div>
+        <div class="hours-row"><span class="day">Sunday</span><span>10am – 8pm</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Pasture + Market at Lac La Biche Golf &amp; Country Club. All rights reserved.</p>
+      <div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
+<script src="js/main.js"></script>
+</body>
+</html>
